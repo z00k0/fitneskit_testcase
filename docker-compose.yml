@@ -11,3 +11,5 @@ services:
       - ./.env
 
     command: uvicorn mysite.asgi:application --reload --host 0.0.0.0 --port 5000
+    cpus: 0.5
+    mem_limit: "512M"
